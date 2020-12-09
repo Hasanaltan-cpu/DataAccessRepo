@@ -2,7 +2,7 @@
 In this project,we use data access tools as an Entity Framework.
 <h3>ORM(Object Relational Mapping)<h3>
 What is an ORM?
-<p>Object-relational-mapping is the idea of being able to write queries , as well as much more complicated ones, using the object-oriented paradigm of your preferred programming language.
+<p>Object-relational-mapping is the idea of being able to write queries , as well as much more complicated ones, using the object-oriented paradigm of your preferred programming language.</p>
   
   
   
