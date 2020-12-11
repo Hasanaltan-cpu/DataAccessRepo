@@ -14,6 +14,8 @@ namespace Part3_CodeFirst.EntityLayer.Entities.Concrete
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public override int Id { get; set; }
+
+
         [Required]
         public string CompanyName { get; set; }
         [Required]

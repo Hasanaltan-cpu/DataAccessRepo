@@ -15,10 +15,10 @@ namespace Part3_CodeFirst.EntityLayer.Entities.Concrete
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public override int Id { get; set; }
 
-        [Required, Column(Order = 2, TypeName = "nvarchar")]
+        [Required, Column(Order = 2)]
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        [Required, Column(Order = 3, TypeName = "nvarchar")]
+        [Required, Column(Order = 3)]
         public string Title { get; set; }
         public string TitleOfCourtesy { get; set; }
         public DateTime BirthDate { get; set; }
@@ -35,7 +35,7 @@ namespace Part3_CodeFirst.EntityLayer.Entities.Concrete
         public string Extension { get; set; }
         public string Photo { get; set; }
         public string Notes { get; set; }
-        [Required, Column(Order = 4, TypeName = "nvarchar")]
+        [Required, Column(Order = 4)]
         public string ReportsTo { get; set; }
     }
 }

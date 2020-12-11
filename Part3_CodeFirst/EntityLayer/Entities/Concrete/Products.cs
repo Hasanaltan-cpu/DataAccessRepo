@@ -12,21 +12,21 @@ namespace Part3_CodeFirst.EntityLayer.Entities.Concrete
 
         public override int Id { get; set; }
 
-        [Required, Column(Order = 2, TypeName = "nvarchar")]
-       
+        [Required, Column(Order = 2)]
         public string ProductName { get; set; }
-        [ForeignKey("Suppliers")]
-        public int SupplierId { get; set; }
         public int QuantityPerUnit { get; set; }
         public decimal UnitPrice { get; set; }
         public int UnitsInStock { get; set; }
         public int UnitsOnOrder { get; set; }
         public int ReorderLevel { get; set; }
-        public bool Discontinued { get; set; }// Becase discontinued in the database 0 or 1 .
+        public bool Discontinued { get; set; }// I use boolean because discontinued in the database 0 or 1 .
 
-        [ForeignKey("Category")]
+
         public int CategoryId { get; set; }
         public virtual Categories Category { get; set; }
+
+        public int SuppliersId { get; set; }
+        public virtual Suppliers Supplier { get; set; }
 
 
 

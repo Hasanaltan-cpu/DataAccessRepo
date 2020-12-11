@@ -11,12 +11,18 @@ namespace Part3_CodeFirst.EntityLayer.Entities.Concrete
 {
     public class OrderDetails : BaseEntity<int>
     {
-        [ForeignKeyAttribute("Orders")]
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public override int Id { get ; set; }
-        [ForeignKey("Products")]
-        public int ProductID { get; set; }
+
         public decimal UnitPrice { get; set; }
         public int Quantity { get; set; }
         public decimal Discount { get; set; }
+
+        public int OrderId { get; set; }
+        public virtual Orders Order { get; set; }
+
+        public int ProductID { get; set; }
+        public virtual Products Products { get; set; }
     }
 }

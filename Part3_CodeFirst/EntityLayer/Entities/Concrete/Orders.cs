@@ -14,18 +14,21 @@ namespace Part3_CodeFirst.EntityLayer.Entities.Concrete
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public override int Id { get; set; }
-        [Required]
-        [ForeignKey("Customers")]
+
+
         public int CustomerID { get; set; }
-        [ForeignKey("Employees")]
+        public virtual Customers Customers { get; set; }
+
         public int EmployeeID { get; set; }
+        public virtual Employees Employees { get; set; }
+
+
         [Required]
         public DateTime OrderDate { get; set; }
         public DateTime RequiredDate { get; set; }
         [Required]
         public DateTime ShippedDate { get; set; }
-        [ForeignKey("Shippers")]
-        public int ShipVia { get; set; }
+
         public decimal Freight { get; set; }
         public string ShipName { get; set; }
         public string ShipAdress { get; set; }
@@ -34,6 +37,11 @@ namespace Part3_CodeFirst.EntityLayer.Entities.Concrete
         public int ShipPostalCode { get; set; }
         [Required]
         public string ShipCountry { get; set; }
+
+
+
+        public int ShipperId { get; set; }
+        public virtual Shippers Shippers { get; set; }
 
 
     }

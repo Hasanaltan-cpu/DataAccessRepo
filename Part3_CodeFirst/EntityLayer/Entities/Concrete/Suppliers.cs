@@ -14,9 +14,10 @@ namespace Part3_CodeFirst.EntityLayer.Entities.Concrete
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public override int Id { get; set ; }
-        [Required,Column(Order =2,TypeName ="string")]
+
+        [Required,Column(Order =2)]
         public string CompanyName { get; set; }
-        [Required,Column(Order =3,TypeName ="string")]
+        [Required,Column(Order =3)]
         public string ContactName { get; set; }
         public string ContactTitle { get; set; }
         public string Address { get; set; }
@@ -30,6 +31,6 @@ namespace Part3_CodeFirst.EntityLayer.Entities.Concrete
         public string Fax { get; set; }
         public string HomePage { get; set; }
 
-
+        public virtual List<Products> Products { get; set; }
     }
 }
