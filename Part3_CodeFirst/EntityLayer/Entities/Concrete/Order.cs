@@ -9,18 +9,18 @@ using System.Threading.Tasks;
 
 namespace Part3_CodeFirst.EntityLayer.Entities.Concrete
 {
-    public class Orders : BaseEntity<int>
+    public class Order : BaseEntity<int>
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public override int Id { get; set; }
 
-
+        [ForeignKey("Customer")]
         public int CustomerID { get; set; }
-        public virtual Customers Customers { get; set; }
-
+        public virtual Customer Customer { get; set; }
+        [ForeignKey("Employee")]
         public int EmployeeID { get; set; }
-        public virtual Employees Employees { get; set; }
+        public virtual Employees Employee { get; set; }
 
 
         [Required]
@@ -39,9 +39,9 @@ namespace Part3_CodeFirst.EntityLayer.Entities.Concrete
         public string ShipCountry { get; set; }
 
 
-
+        [ForeignKey("Shipper")]
         public int ShipperId { get; set; }
-        public virtual Shippers Shippers { get; set; }
+        public virtual Shipper Shipper { get; set; }
 
 
     }

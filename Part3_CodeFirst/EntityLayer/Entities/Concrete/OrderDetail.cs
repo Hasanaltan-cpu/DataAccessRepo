@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Part3_CodeFirst.EntityLayer.Entities.Concrete
 {
-    public class OrderDetails : BaseEntity<int>
+    public class OrderDetail : BaseEntity<int>
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -19,10 +19,12 @@ namespace Part3_CodeFirst.EntityLayer.Entities.Concrete
         public int Quantity { get; set; }
         public decimal Discount { get; set; }
 
+        [ForeignKey("Order")]
         public int OrderId { get; set; }
-        public virtual Orders Order { get; set; }
+        public virtual Order Order { get; set; }
 
-        public int ProductID { get; set; }
-        public virtual Products Products { get; set; }
+        [ForeignKey("Product")]
+        public int ProductId{ get; set; }
+        public virtual Product Product { get; set; }
     }
 }

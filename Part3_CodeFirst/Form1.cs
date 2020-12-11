@@ -32,7 +32,7 @@ namespace Part3_CodeFirst
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            Categories category = new Categories();
+            Category category = new Category();
             //EF' kendisi otomatik atadı.
             category.CategoryName = txtAddName.Text;
             category.Description = txtAddDescription.Text;
@@ -67,7 +67,7 @@ namespace Part3_CodeFirst
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            Categories category = db.Categories.FirstOrDefault(x => x.Id == id); //Update edeceğin ürünü Id'den yakalamamız gerekiyor.!!!
+            Category category = db.Categories.FirstOrDefault(x => x.Id == id); //Update edeceğin ürünü Id'den yakalamamız gerekiyor.!!!
             category.CategoryName = txtUpdateName.Text;
             category.Description = txtUpdateDescription.Text;
             category.Status = Status.Modified;
@@ -79,7 +79,7 @@ namespace Part3_CodeFirst
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Categories category = db.Categories.FirstOrDefault(x => x.Id == id);
+            Category category = db.Categories.FirstOrDefault(x => x.Id == id);
             category.Status = Status.Passive;
             category.ModifiedDate = DateTime.Now;
             db.SaveChanges();

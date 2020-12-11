@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace Part3_CodeFirst.EntityLayer.Entities.Concrete
 {
     [Table("Categories")]
-    public class Categories : BaseEntity<int>
+    public class Category : BaseEntity<int>
     { 
         //This is attribute and we should give IdentityKey of Category.cs.
         [Key] 
@@ -22,6 +22,6 @@ namespace Part3_CodeFirst.EntityLayer.Entities.Concrete
         [Required]
         
         public string Description { get; set; } 
-        public virtual List<Products> Product{ get; set; }
+        public virtual List<Product> Product{ get; set; }
     }
 }

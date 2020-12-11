@@ -6,7 +6,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Part3_CodeFirst.EntityLayer.Entities.Concrete
 {
-    public class Products : BaseEntity<int>
+    public class Product : BaseEntity<int>
     {
         [Key,DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 
@@ -21,12 +21,12 @@ namespace Part3_CodeFirst.EntityLayer.Entities.Concrete
         public int ReorderLevel { get; set; }
         public bool Discontinued { get; set; }// I use boolean because discontinued in the database 0 or 1 .
 
-
+        [ForeignKey("Category")]
         public int CategoryId { get; set; }
-        public virtual Categories Category { get; set; }
-
+        public virtual Category Category { get; set; }
+        [ForeignKey("Supplier")]
         public int SuppliersId { get; set; }
-        public virtual Suppliers Supplier { get; set; }
+        public virtual Supplier Supplier { get; set; }
 
 
 

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Part3_CodeFirst.EntityLayer.Entities.Concrete
 {
-    public class Customers : BaseEntity<int>
+    public class Customer : BaseEntity<int>
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

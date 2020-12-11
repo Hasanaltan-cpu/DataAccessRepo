@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Part3_CodeFirst.EntityLayer.Entities.Concrete
 {
-    public class Suppliers : BaseEntity<int>
+    public class Supplier : BaseEntity<int>
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -31,6 +31,6 @@ namespace Part3_CodeFirst.EntityLayer.Entities.Concrete
         public string Fax { get; set; }
         public string HomePage { get; set; }
 
-        public virtual List<Products> Products { get; set; }
+        public virtual List<Product> Products { get; set; }
     }
 }
