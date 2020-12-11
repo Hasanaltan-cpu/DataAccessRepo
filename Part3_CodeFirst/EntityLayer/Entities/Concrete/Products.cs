@@ -13,14 +13,23 @@ namespace Part3_CodeFirst.EntityLayer.Entities.Concrete
         public override int Id { get; set; }
 
         [Required, Column(Order = 2, TypeName = "nvarchar")]
-        //Order attribute'si sayesinde name property'sinin tablo içerisinde ikinci sütun olarak yaratılacağını belirttik.
-        public string Name { get; set; }
-        //Relation Database gereği bir product'ın muhakkak bir category'si olmak zorundadır.
+       
+        public string ProductName { get; set; }
+        [ForeignKey("Suppliers")]
+        public int SupplierId { get; set; }
+        public int QuantityPerUnit { get; set; }
+        public decimal UnitPrice { get; set; }
+        public int UnitsInStock { get; set; }
+        public int UnitsOnOrder { get; set; }
+        public int ReorderLevel { get; set; }
+        public bool Discontinued { get; set; }// Becase discontinued in the database 0 or 1 .
+
         [ForeignKey("Category")]
         public int CategoryId { get; set; }
-        public virtual Category Category { get; set; }
-        //Yukarıda EF teknolojilerinden Lazy Loading'i aktif hale getirmek için virtual olarak işaretledik.Ayrıca başka bir alternatif olarak Eager Loading ' de tercih edilebilir.Tüm bu yaklaşımları projede duyulan ihtiyaclara göre seçmeliyiz.
+        public virtual Categories Category { get; set; }
 
-       
+
+
+
     }
 }

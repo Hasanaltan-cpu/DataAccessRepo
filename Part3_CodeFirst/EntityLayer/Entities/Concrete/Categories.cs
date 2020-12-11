@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace Part3_CodeFirst.EntityLayer.Entities.Concrete
 {
     [Table("Categories")]//Bu attribute ile aşağıdaki sınıfın veri tabanı tarafında tablo olarak ayapı kalkarken alacağı ismi belirler.
-    public class Category : BaseEntity<int>
+    public class Categories : BaseEntity<int>
     { 
         //Aşağıda attribute bazında mapping yapıyoruz..
         [Key] // PrimaryKey olarak belirttik.

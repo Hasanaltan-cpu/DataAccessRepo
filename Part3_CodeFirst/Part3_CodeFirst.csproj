@@ -57,8 +57,14 @@
   <ItemGroup>
     <Compile Include="DataAccessLayer\Context\ProjectContext.cs" />
     <Compile Include="EntityLayer\Entities\Abstract\BaseEntity.cs" />
-    <Compile Include="EntityLayer\Entities\Concrete\Category.cs" />
+    <Compile Include="EntityLayer\Entities\Concrete\Categories.cs" />
+    <Compile Include="EntityLayer\Entities\Concrete\Customers.cs" />
+    <Compile Include="EntityLayer\Entities\Concrete\Employees.cs" />
+    <Compile Include="EntityLayer\Entities\Concrete\OrderDetails.cs" />
+    <Compile Include="EntityLayer\Entities\Concrete\Orders.cs" />
     <Compile Include="EntityLayer\Entities\Concrete\Products.cs" />
+    <Compile Include="EntityLayer\Entities\Concrete\Shippers.cs" />
+    <Compile Include="EntityLayer\Entities\Concrete\Suppliers.cs" />
     <Compile Include="EntityLayer\Enums\Status.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
