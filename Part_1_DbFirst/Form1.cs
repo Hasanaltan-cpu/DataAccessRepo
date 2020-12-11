@@ -50,7 +50,7 @@ namespace Part_1_DbFirst
             dataGridView1.DataSource = db.Orders.GroupBy(x => x.EmployeeID).Select(x => new
             {
                 Satıspersoneli = x.Key,
-                toplamsatis = x.Sum(e => e.OrderID)
+               
             }).ToList();
         }
 

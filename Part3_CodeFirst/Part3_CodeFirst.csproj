@@ -4,14 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7D836B2B-6F99-4A89-A4D5-A7C0FAB7F0BE}</ProjectGuid>
+    <ProjectGuid>{53577ECA-5A11-43ED-A72B-0529F1A41531}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Part2_Dbfirst_2</RootNamespace>
-    <AssemblyName>Part2_Dbfirst_2</AssemblyName>
+    <RootNamespace>Part3_CodeFirst</RootNamespace>
+    <AssemblyName>Part3_CodeFirst</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -42,8 +44,6 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -55,60 +55,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccessLayer\Context\ProjectContext.cs" />
+    <Compile Include="EntityLayer\Entities\Abstract\BaseEntity.cs" />
+    <Compile Include="EntityLayer\Entities\Concrete\Category.cs" />
+    <Compile Include="EntityLayer\Entities\Concrete\Products.cs" />
+    <Compile Include="EntityLayer\Enums\Status.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="ORM\Category.cs">
-      <DependentUpon>Northwind.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ORM\Customer.cs">
-      <DependentUpon>Northwind.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ORM\CustomerDemographic.cs">
-      <DependentUpon>Northwind.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ORM\Employee.cs">
-      <DependentUpon>Northwind.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ORM\Northwind.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Northwind.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ORM\Northwind.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Northwind.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ORM\Northwind.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Northwind.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="ORM\Order.cs">
-      <DependentUpon>Northwind.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ORM\Order_Detail.cs">
-      <DependentUpon>Northwind.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ORM\Product.cs">
-      <DependentUpon>Northwind.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ORM\Region.cs">
-      <DependentUpon>Northwind.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ORM\Shipper.cs">
-      <DependentUpon>Northwind.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ORM\Supplier.cs">
-      <DependentUpon>Northwind.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ORM\Territory.cs">
-      <DependentUpon>Northwind.tt</DependentUpon>
-    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -123,13 +81,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EntityDeploy Include="ORM\Northwind.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Northwind.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="ORM\Northwind.edmx.diagram">
-      <DependentUpon>Northwind.edmx</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -144,20 +95,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="ORM\Northwind.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Northwind.Context.cs</LastGenOutput>
-      <DependentUpon>Northwind.edmx</DependentUpon>
-    </Content>
-    <Content Include="ORM\Northwind.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Northwind.edmx</DependentUpon>
-      <LastGenOutput>Northwind.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
