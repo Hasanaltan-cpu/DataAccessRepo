@@ -40,5 +40,11 @@ Database updates in terms of class and models situation.
         One of the ways we can load entities eagerly by using the "include" method.Entity Framework creates a join query,when it sees the "include" method , thus bringing all the records in one single query.
         There are two versions of the include method available. The default method where you need to specify the navigational Property as a string.
          The other one from the System.Data.Entity namespace.It takes a lambda expression,where you need to specify the navigational Property.</p>
+    
+    
+<h2>What is Lazy Loading?<h2>
+  
+<h3><p>Lazy loading (also called on-demand loading) is an optimization technique for the online content, be it a website or a web app.
+Instead of loading the entire web page and rendering it to the user in one go as in bulk loading, the concept of lazy loading assists in loading only the required section and delays the remaining, until it is needed by the user.</p>
 Visit me
 https://hsnaltan13.gitbook.io/entity-framework-ef-ado-net 
