@@ -12,7 +12,7 @@ namespace Part4_YellowPages.EntityLayer.Entities.Abstract
         public abstract T Id { get; set; }
         private DateTime _createDate = DateTime.Now;//Encapsulation
         public DateTime CreateDate { get => _createDate; }
-
+         
         public DateTime? ModifiedDate { get; set; }
         public DateTime? PassivedDate { get; set; }
         private Status _status = Status.Active;
