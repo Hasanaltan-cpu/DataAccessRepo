@@ -2,9 +2,9 @@
 
 <h2> Table of contents</h2>
 
-    -Part1(Linq Methods & Aggregrate Functions Example)
+     -Part1(Linq Methods & Aggregrate Functions Example)
   
-    -Part2(Mix Examples)
+     -Part2(Mix Examples)
   
      -Part3(To Create Database by Approaching "Code First")
   
