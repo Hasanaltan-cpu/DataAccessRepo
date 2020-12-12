@@ -1,5 +1,8 @@
-#Using EntityframeWork and Creating Schema on C# by CodeFirst.
 
-I ve begun with codefirst approach and EntityFramework 6.2.0 and get datas from Northwind.db SQL.
+Using EntityframeWork and Creating Schema on C# by CodeFirst.
+
+   I ve begun with codefirst approach and EntityFramework 6.2.0 and get datas from Northwind.db SQL.Main purpose is to get database with Object Relational Mapping.
+Thus,i obey the OOP rules and as u see i create all folder what we need than i added via "NugEt Package" "Entity FrameWork".Finally ı create database and i attached picture
+database diagram on the SQL.
 
 https://ibb.co/MskrD1n

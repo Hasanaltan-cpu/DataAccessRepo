@@ -35,8 +35,8 @@ Database updates in terms of class and models situation.
 
 
 
-<h2>What is Eager Loading<h2>
-  <h3><p> Eager loading is a technique where EF loads the related entities along with the main entity.All entities are loaded in a single query to database thus saving bandwidth and crucial server CPU time.This is done using "include method", which has two overloads.One of which takes navigation property as a string.the other "include method" is an extension method and far more flexible.In this tutorial,we learn how to make load the entities eagerly.We also show how to Eager Loading from multiple Levels and multiple Tables.  
+<h2>3.What is Eager Loading<h2>
+  <h3><p>Eager loading is a technique where EF loads the related entities along with the main entity.All entities are loaded in a single query to database thus saving bandwidth and crucial server CPU time.This is done using "include method", which has two overloads.One of which takes navigation property as a string.the other "include method" is an extension method and far more flexible.In this tutorial,we learn how to make load the entities eagerly.We also show how to Eager Loading from multiple Levels and multiple Tables.  
         One of the ways we can load entities eagerly by using the "include" method.Entity Framework creates a join query,when it sees the "include" method , thus bringing all the records in one single query.
         There are two versions of the include method available. The default method where you need to specify the navigational Property as a string.
          The other one from the System.Data.Entity namespace.It takes a lambda expression,where you need to specify the navigational Property.</p>
