@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Part4_YellowPages.EntityLayer.Entities.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -16,7 +17,7 @@ namespace Part4_YellowPages.DataAccessLayer.Context
         }
 
         
-            
+        public  DbSet<User> User { get; set; }
 
     }
 }

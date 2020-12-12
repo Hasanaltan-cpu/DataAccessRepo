@@ -50,7 +50,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="DataAccessLayer\Context\ProjectContext.cs" />
     <Compile Include="EntityLayer\Entities\Abstract\BaseEntity.cs" />
     <Compile Include="EntityLayer\Entities\Concrete\User.cs" />

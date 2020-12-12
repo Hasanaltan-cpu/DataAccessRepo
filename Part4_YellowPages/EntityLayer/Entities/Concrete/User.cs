@@ -1,4 +1,5 @@
 ﻿using Part4_YellowPages.EntityLayer.Entities.Abstract;
+using Part4_YellowPages.EntityLayer.Enums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -22,6 +23,8 @@ namespace Part4_YellowPages.EntityLayer.Entities.Concrete
         [Required]
         public string PhoneNumber { get; set; }
         public string Note { get; set; }
+
+  
 
     }
 }
