@@ -1,4 +1,16 @@
 # DataAccessRepo
+
+1. Table of contents
+
+  -Part1(Linq Methods & Aggregrate Functions Example)
+  
+  -Part2(Mix Examples)
+  
+  -Part3(To Create Database by Approaching "Code First")
+  
+  -Part4(Example of CodeFirst:Yellow Pages PhoneNumber Index)
+
+
 <h2>In this project,we use data access tools as an Entity Framework.<h2>
 <h3>ORM(Object Relational Mapping)<h3>
 What is an ORM?
