@@ -1,6 +1,6 @@
 # DataAccessRepo
 
-1.<h2> Table of contents</h2>
+<h2> Table of contents</h2>
 
     -Part1(Linq Methods & Aggregrate Functions Example)
   
