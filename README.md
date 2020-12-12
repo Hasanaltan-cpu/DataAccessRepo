@@ -1,14 +1,14 @@
 # DataAccessRepo
 
-1. Table of contents
+1.<h2> Table of contents</h2>
 
-  -Part1(Linq Methods & Aggregrate Functions Example)
+    -Part1(Linq Methods & Aggregrate Functions Example)
   
-  -Part2(Mix Examples)
+    -Part2(Mix Examples)
   
-  -Part3(To Create Database by Approaching "Code First")
+     -Part3(To Create Database by Approaching "Code First")
   
-  -Part4(Example of CodeFirst:Yellow Pages PhoneNumber Index)
+     -Part4(Example of CodeFirst:Yellow Pages PhoneNumber Index)
 
 
 <h2>In this project,we use data access tools as an Entity Framework.<h2>
