@@ -9,6 +9,8 @@
      -Part3(To Create Database by Approaching "Code First")
   
      -Part4(Example of CodeFirst:Yellow Pages PhoneNumber Index)
+     
+     -Part5(Explanation of LazyLoading&Eager Loading)
 
 
 <h2>In this project,we use data access tools as an Entity Framework.<h2>
