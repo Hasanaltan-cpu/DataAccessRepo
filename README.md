@@ -3,7 +3,7 @@
 <h2> Table of contents</h2>
 
      -Part1(Linq Methods & Aggregrate Functions Example)
-     URL="https://github.com/Hasanaltan-cpu/DataAccessRepo/tree/master/Part_1_DbFirst"
+     https://github.com/Hasanaltan-cpu/DataAccessRepo/tree/master/Part_1_DbFirst
   
      -Part2(Mix Examples)
   
