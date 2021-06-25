@@ -61,5 +61,6 @@ Database updates in terms of class and models situation.
   
 <h3><p>Lazy loading (also called on-demand loading) is an optimization technique for the online content, be it a website or a web app.
 Instead of loading the entire web page and rendering it to the user in one go as in bulk loading, the concept of lazy loading assists in loading only the required section and delays the remaining, until it is needed by the user.</p>
+     
 Visit me
 https://hsnaltan13.gitbook.io/entity-framework-ef-ado-net 
